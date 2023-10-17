@@ -1,3 +1,4 @@
+#include <cstdint>
 #include "utf8.h"
 
 // Ⱥ Ⱥ Ⱥ Ⱥ

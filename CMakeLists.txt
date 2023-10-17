@@ -76,8 +76,8 @@ target_include_directories(onigmolib
 )
 
 find_package(Lua REQUIRED)
-set(LUA_PREFERRED_INCLUDE_DIRS ${LUAINCLUDE_DIRS})
-set(LUA_PREFERRED_LIBRARIES ${LUALIBRARIES})
+set(LUA_PREFERRED_INCLUDE_DIRS ${LUA_INCLUDE_DIR})
+set(LUA_PREFERRED_LIBRARIES ${LUA_LIBRARY})
 
 add_library(textmate
   SHARED 
@@ -115,6 +115,7 @@ target_include_directories(textmate
   ./libs/tm-parser/textmate/theme
   ./libs/tm-parser/textmate/extensions
   ./libs/tm-parser/textmate/resources
+  ${LUA_PREFERRED_INCLUDE_DIRS}
 )
 
 set_target_properties(textmate PROPERTIES PREFIX "")

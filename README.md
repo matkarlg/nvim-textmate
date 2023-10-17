@@ -48,6 +48,8 @@ require('nvim-textmate').setup({
 # extensions
 
 Copy vscode theme and grammar extensions to any of these directories:
+Copy from `/usr/lib/code/extensions` on Arch Linux.
+For Ubuntu it's another directory
 
 ```sh
 ~/.config/nvim/lua/nvim-textmate/
